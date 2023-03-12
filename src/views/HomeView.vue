@@ -6,9 +6,9 @@ import { RouterLink } from 'vue-router';
     <div>
       <h1> <em> &lt; Hello vue world /> </em> </h1>
       <br>
-      <RouterLink to="/">home</RouterLink>
-      <RouterLink to="/counter">counter</RouterLink>
-      <RouterLink to="/notes">notes</RouterLink>
+      <RouterLink active-class="active" to="/">home</RouterLink>
+      <RouterLink active-class="active" to="/counter">counter</RouterLink>
+      <RouterLink active-class="active" to="/notes">notes</RouterLink>
     </div>
   </div>
 </template>
@@ -28,5 +28,9 @@ a{
   border: 2px solid black;
   border-radius: 5px;
   background-color: cornflowerblue;
+}
+.active{
+  font-weight: bold;
+  color: greenyellow;
 }
 </style>

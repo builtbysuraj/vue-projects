@@ -6,22 +6,26 @@ let count = ref(0)
 
 <template>
   <div class="card">
-    <h1>The counter is...</h1>
-    <h1>{{ count }}</h1>
-    <button type="button" @click="count > 0 ? count-- : null">-</button>
-    <button type="button" @click="count = 0">reset</button>
-    <button type="button" @click="count++">+</button>
+    <main>
+      <h1>The counter is...</h1>
+      <h1>{{ count }}</h1>
+      <button type="button" @click="count > 0 ? count-- : null">-</button>
+      <button type="button" @click="count = 0">reset</button>
+      <button type="button" @click="count++">+</button>
+    </main>
   </div>
 </template>
 
 <style scoped>
 .card{
-  border-radius: 5px;
-  padding: 50px;
-
   text-align: center;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 50px;
 }
-
+h1{
+  margin-bottom: 15px;
+}
 button{
   padding: 10px 20px;
   font-size: 16px;
