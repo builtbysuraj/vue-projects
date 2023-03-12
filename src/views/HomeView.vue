@@ -1,18 +1,18 @@
 <script setup>
-
+import { RouterLink } from 'vue-router';
 </script>
 <template>
   <div class="container">
     <div>
       <h1> <em> &lt; Hello vue world /> </em> </h1>
       <br>
-      <a href="/">home</a>
-      <a href="/counter">counter</a>
-      <a href="/notes">notes</a>
+      <RouterLink to="/">home</RouterLink>
+      <RouterLink to="/counter">counter</RouterLink>
+      <RouterLink to="/notes">notes</RouterLink>
     </div>
   </div>
 </template>
-
+ 
 <style scoped>
 .container{
   display: flex;
